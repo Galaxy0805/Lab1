@@ -6,38 +6,48 @@ int trans() {
 	int a;
 	cin >> a;
 	while ((a < -10000) || (a > 10000)) {
-		cout << "Введите корректное число!" << endl;
+		cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ!" << endl;
 		cin >> a;
 	}
 	return a;
 }
 
-int sum(int a, int b)
+int sumX(int x1, int x2)
 {
-	return(a + b);
+	return(x1 + x2);
 }
 
-int raz(int a, int b)
+int sumY(int y1, int y2)
 {
-	return(a - b);
+	return(y1 + y2);
 }
 
-int proX(int a, int b, int c, int d)
+int razX(int x1, int x2)
 {
-	return((a * c)) - ((b * d));
+	return(x1 - x2);
 }
 
-int proY(int a, int b, int c, int d)
+int razY(int y1, int y2)
 {
-	return((a * d)) + ((b * c));
+	return(y1 - y2);
 }
 
-int delX(int a, int b, int c, int d)
+int proX(int x1, int y1, int x2, int y2)
 {
-	return(((a * c)) + ((b * d)) / ((c * c) + (d * d)));
+	return((x1 * x2)) - ((y1 * y2));
 }
 
-int delY(int a, int b, int c, int d)
+int proY(int x1, int y1, int x2, int y2)
 {
-	return(((b * c)) - ((a * d)) / ((c * c) + (d * d)));
+	return((x1 * y2)) + ((y1 * x2));
+}
+
+int delX(int x1, int y1, int x2, int y2)
+{
+	return(((x1 * x2)) + ((y1 * y2)) / ((x2 * x2) + (y2 * y2)));
+}
+
+int delY(int x1, int y1, int x2, int y2)
+{
+	return(((y1 * x2)) - ((x1 * y2)) / ((x2 * x2) + (y2 * y2)));
 }

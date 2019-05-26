@@ -24,13 +24,13 @@ int main()
 	switch (act)
 	{
 	case '+':
-		numrez.x = sum(num1.x, num2.x);
-		numrez.y = sum(num1.y, num2.y);
+		numrez.x = sumX(num1.x, num2.x);
+		numrez.y = sumY(num1.y, num2.y);
 		cout << "Результат: " << numrez.x << "+" << numrez.y << "i" << endl;
 		break;
 	case '-':
-		numrez.x = raz(num1.x, num2.x);
-		numrez.y = raz(num1.y, num2.y);
+		numrez.x = razX(num1.x, num2.x);
+		numrez.y = razY(num1.y, num2.y);
 		cout << "Результат: " << numrez.x << "+" << numrez.y << "i" << endl;
 		break;
 	case '*':
